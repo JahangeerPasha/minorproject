@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        header {
+            background-image: linear-gradient(90deg, #eb5e28, #ffffff, #55a630);
+            text-align: center;
+            font-size: 60px;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: 1px 1px 2px;
+            /* border-color: #55a630; */
+            /* border-style: double;
+            border-width: 10px; */
+        }
+
+        footer {
+            background-image: linear-gradient(120deg, #eb5e28, #ffffff, #55a630);
+            text-align: center;
+            font-size: 50px;
+            position: relative;
+            bottom: 0px;
+            left: 0px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 100%;
+            text-shadow: 1px 1px 2px;
+            /* margin-bottom: 100px; */
+        }
+
+        #box1 {
+            background-image: linear-gradient(90deg, #00bbf9, white, #00bbf9);
+            width: 1600px;
+            height: 650px;
+            margin-top: 130px;
+            margin-left: 45px;
+            /* position: fixed; */
+            box-shadow: 2px 2px 5px;
+            border-radius: 5px;
+
+        }
+
+        #box2 {
+            background-image: linear-gradient(90deg, #00bbf9, white, #00bbf9);
+            width: 1600px;
+            height: 650px;
+            margin-top: 130px;
+            margin-left: 45px;
+            box-shadow: 2px 2px 5px;
+            border-radius: 5px;
+        }
+
+        #box3 {
+            background-image: linear-gradient(90deg, #00bbf9, white, #00bbf9);
+            width: 1600px;
+            height: 650px;
+            margin-top: 130px;
+            margin-left: 45px;
+            box-shadow: 2px 2px 5px;
+            border-radius: 5px;
+        }
+
+        .box11 {
+            background-color: white;
+            width: 400px;
+            height: 550px;
+            position: absolute;
+            top: 100px;
+            margin-top: 80px;
+            margin-left: 50px;
+            border-radius: 10px;
+            /* padding-bottom: 180px; */
+            box-shadow: 5px 5px 10px black;
+            border-radius: 5px;
+        }
+        
+
+        .box12 {
+            background-color: white;
+            width: 400px;
+            height: 550px;
+            position: absolute;
+            top: 100px;
+            margin-top: 80px;
+            margin-left: 600px;
+            border-radius: 10px;
+            /* padding-bottom: 180px; */
+            box-shadow: 5px 5px 10px black;
+            border-radius: 5px;
+        }
+
+        .box13 {
+            background-color: white;
+            width: 400px;
+            height: 550px;
+            position: absolute;
+            top: 100px;
+            margin-top: 80px;
+            margin-left: 1150px;
+            border-radius: 10px;
+            /* padding-bottom: 180px; */
+            box-shadow: 5px 5px 10px black;
+            border-radius: 5px;
+        }
+
+        .box21 {
+            background-color: white;
+            width: 400px;
+            height: 550px;
+            position: absolute;
+            top: 950px;
+            margin-left: 50px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 5px;
+        }
+
+        .box22 {
+            background-color: white;
+            width: 400px;
+            height: 550px;
+            position: absolute;
+            top: 950px;
+            margin-left: 600px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 5px;
+        }
+
+        .box23 {
+            background-color: white;
+            width: 400px;
+            height: 550px;
+            position: absolute;
+            top: 950px;
+            margin-left: 1150px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 5px;
+        }
+
+        .box31 {
+            background-color: white;
+            width: 400px;
+            height: 550px;
+            position: absolute;
+            top: 1730px;
+            margin-left: 50px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 5px;
+        }
+
+        .box32 {
+            background-color: white;
+            width: 400px;
+            height: 550px;
+            position: absolute;
+            top: 1730px;
+            margin-left: 600px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 5px;
+        }
+
+        .box33 {
+            background-color: white;
+            width: 400px;
+            height: 550px;
+            position: absolute;
+            top: 1730px;
+            margin-left: 1150px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 5px;
+        }
+
+        .a {
+            margin-top: 40px;
+            margin-left: 50px;
+            border-radius: 10px;
+            /* position: fixed; */
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .b {
+            text-align: center;
+        }
+
+        h6 {
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            /* text-shadow: 2px 2px; */
+        }
+
+        .ashoka {
+            margin-top: 20px;
+        }
+
+        .follow {
+            margin-right: 180px;
+            font-size: 22px;
+            /* text-align: center; */
+            font-style: italic;
+            word-spacing: 5px;
+            letter-spacing: 2px;
+        }
+
+        .icon {
+            margin-right: 40px;
+            font-size: 30px;
+            padding: 20px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            border-style: solid;
+            background-color: white;
+        }
+
+        .icon:hover {
+            background-color: rgb(219, 213, 213);
+            opacity: 0.9;
+            /* border-style:solid; */
+        }
+
+        .icon-instagram {
+            background: #125688;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="gate.png" width="40px">
+        <img src="hawa-mahal.png" width="45px">
+        <img src="charminar.png" width="40px">
+        Historical Places In India
+        <img src="taj-mahal (1).png" width="50px">
+        <img src="qutub-minar.png" width="40px">
+        <img src="gateway-of-india.png" width="50px">
+    </header>
+    <div id="box1">
+        <div class="box11">
+            <img src="https://www.travelandleisure.com/thmb/wdUcyBQyQ0wUVs4wLahp0iWgZhc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/taj-mahal-agra-india-TAJ0217-9eab8f20d11d4391901867ed1ce222b8.jpg"
+                width="300px" height="200px" class="a">
+            <p> <b>Taj Mahal</b></p>
+            <p>An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor
+                Shah Jahan in memory of his favourite wife, the Taj Mahal is the jewel of Muslim art in India and one of
+                the universally admired masterpieces of the world's heritage.</p>
+            <div align="center">
+                <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank">More info</a>
+            </div>
+        </div>
+        <div class="box12">
+            <img src="https://static2.tripoto.com/media/filter/tst/img/1339317/TripDocument/1547700259_lal_quila.jpg"
+                height="200px" width="300px" class="a">
+            <p><b>Red Fort</b></p>
+            <p>Red Fort, also called Lal Qalʿah, also spelled Lal Kila or Lal Qila, Mughal fort in Old Delhi, India. It
+                was built by Shah Jahān in the mid-17th century and remains a major tourist attraction. The fort was
+                designated a UNESCO World Heritage site in 2007.</p>
+            <div align="center">
+                <a href="https://en.wikipedia.org/wiki/Red_Fort" target="_blank">Moreinfo</a>
+            </div>
+        </div>
+        <div class="box13">
+            <img src="https://www.esamskriti.com/essays/docfile/42_3746.jpg" height="200px" width="300px" class="a">
+            <p><b>Sanchi Stupa</b></p>
+            <p>Great Stupa, most noteworthy of the structures at the historic site of Sanchi in Madhya Pradesh state,
+                India. It is one of the oldest Buddhist monuments in the country and the largest stupa at the site.
+
+                The Great Stupa (also called stupa no. 1) was originally built in the 3rd century BCE by the Mauryan
+                emperor Ashoka and is believed to house ashes of the Buddha. </p>
+            <div align="center">
+                <a href="https://en.wikipedia.org/wiki/Sanchi_Stupa_No._2" target="_blank">Moreinfo</a>
+            </div>
+        </div>
+    </div>
+    <div id="box2">
+        <div class="box21">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRpfIRm2wdbkw1UlSLMxjlmPf0yCh_BbILgA&usqp=CAU"
+                height="200px" width="300px" class="a">
+            <p><b>Gateway Of India</b></p>
+            <p>Gateway of India, monument in Mumbai that was completed in 1924.
+
+                Situated on the Apollo Bunder overlooking the Arabian Sea, the Gateway of India was designed to
+                commemorate the visit in 1911 of King George V and Queen Mary, who had been en route to the durbar being
+                held in Delhi to celebrate their coronation as emperor and empress of India.</p>
+            <div align="center">
+                <a href="https://en.wikipedia.org/wiki/Gateway_of_India" target="_blank">Moreinfo</a>
+            </div>
+        </div>
+        <div class="box22">
+            <img src="https://daneelyunus.files.wordpress.com/2017/05/a92e3-qutubminar.jpg?w=640" height="200px"
+                width="300px" class="a">
+            <p><b>Qutub Minar</b></p>
+            <p>Quṭb Mīnār, among the tallest minarets in Asia, built in Delhi beginning at the turn of the 13th century
+                by Quṭb al-Dīn Aibak and completed by his successor, Iltutmish.
+
+                As the mīnār (tower) to the Qūwat-ul-Islām mosque, the Quṭb Mīnār serves the traditional purpose of
+                being the place from which the faithful are called to prayer</p>
+            <div align="center">
+                <a href="https://en.wikipedia.org/wiki/Qutb_Minar" target="_blank">Moreinfo</a>
+            </div>
+        </div>
+        <div class="box23">
+            <img src="https://t3.ftcdn.net/jpg/03/97/74/64/360_F_397746410_YP1kxMSzQUhzDrlXCGu9wpKeDakisHjH.jpg"
+                height="200px" width="300px" class="a">
+            <p><b>Charminar</b></p>
+            <p>Charminar, (Urdu: “Four Minarets”) historic monument located at the heart of Hyderabad, west-central
+                Telangana state, south-central India. The city, which is the capital of both Telangana and Andhra
+                Pradesh states, was also the capital of the historic princely state of Hyderabad.</p>
+            <div align="center">
+                <a href="https://en.wikipedia.org/wiki/Charminar" target="_blank">Moreinfo</a>
+            </div>
+        </div>
+    </div>
+    <div id="box3">
+        <div class="box31">
+            <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/05/Hawa-Mahal_600.jpg" height="200px"
+                width="300px" class="a">
+            <p><b>Hawa Mahal</b></p>
+            <p>Hawa Mahal, palace in the Indian city of Jaipur that was designed by Lal Chand Ustad and completed in
+                1799.
+
+                Regarded as one of the iconic symbols of the state of Rajasthan, the Hawa Mahal (Palace of Winds) sits
+                in the center of Rajasthan’s capital, Jaipur. Built as an extension to the women’s chambers of the city
+                palace, it was intended as a viewing screen.</p>
+            <div align="center">
+                <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" target="_blank">Moreinfo</a>
+            </div>
+        </div>
+        <div class="box32">
+            <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/khajuraho-india-temple-complex.jpg"
+                height="200px" width="300px" class="a">
+            <p><b>khajuraho Temple</b></p>
+            <p>Khajuraho, also spelled Khajraho, ancient Kharjuravahaka, historic town, northern Madhya Pradesh state,
+                central India. It is a famous tourist and archaeological site known for its sculptured temples dedicated
+                to Shiva, Vishnu, and Jaina patriarchs. The monuments at Khajuraho were designated a UNESCO World
+                Heritage site in 1986.</p>
+            <div align="center">
+                <a href="https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments" target="_blank">Moreinfo</a>
+            </div>
+        </div>
+        <div class="box33">
+            <img src="https://cdn.britannica.com/74/127174-050-4E634E93/Victoria-Memorial-Hall-Kolkata-India-West-Bengal.jpg"
+                height="200px" width="300px" class="a">
+            <p><b>Victoria Memorial</b></p>
+            <p>Victoria Memorial, a majestic white marble edifice situated in the middle of 64 acres (25 ha) of
+                sprawling gardens, dominating the centre of the Kolkata, India. Architecturally, it seems to reflect
+                contemporary British civic classicism, but there are deliberate Eastern references as well.</p>
+            <div align="center">
+                <a href="https://en.wikipedia.org/wiki/Victoria_Memorial,_Kolkata" target="_blank">Moreinfo</a>
+            </div>
+        </div>
+    </div>
+    <div align="center">
+        <h6>National Anthem <br>
+            <audio src="jan.mp3" controls></audio>
+        </h6>
+    </div>
+    <div align="right">
+        <h5 class="follow">Follow Me On</h5>
+        <i class="fa-brands fa-instagram icon instagram"></i>
+        <i class="fa-brands fa-linkedin icon "></i>
+        <i class="fa-brands fa-facebook icon"></i>
+        <i class="fa-brands fa-whatsapp icon"></i>
+        <i class="fa-brands fa-telegram icon t"></i>
+    </div>
+    <br><br>
+    <footer>
+
+        <img src="ashoka-chakra.png" width="50px" class="ashoka">
+        - Designed By Jahangeer
+    </footer>
+</body>
+
+</html>
